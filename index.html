@@ -3,87 +3,157 @@
   <title>Sokolov_CV</title>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body">
+  
+<!-- общая инфо -->
+  <div class="info">
     <img
-      src="https://umagazine.ru/upload/resize_cache/iblock/52c/650_1200_1/52c32e196332ce091eddbe8de801bfb1.jpg"
-      width="200"
-      alt="Must be me"
-    />
-    <h2>Sokolov N/V</h2>
-    <p><em>Это мое CV</em></p>
-    <hr color="green" size="4" />
-    <!-- контакты -->
-    <h3>Контакты:</h3>
-    <ul>
-      <li>
-        <p>
-          <strong>
-            mail:
-            <a href="nickolay_sokolov@mail.ru" target="_blank"
-              >nickolay_sokolov@mail.ru</a
-            ></strong
-          >
-        </p>
-      </li>
-      <li>
-        <p>TG: @samkopl</p>
-      </li>
-      <li>
-        <p>Phone number: 7-926-926-60-01</p>
-      </li>
-    </ul>
-    <hr color="green" size="4" />
-    <h2>Хоббиес:</h2>
-    <ol>
-      <li>книги</li>
-      <li>jfdlksajdfh</li>
-      <li>Lorem, ipsum.</li>
-    </ol>
+        src="https://umagazine.ru/upload/resize_cache/iblock/52c/650_1200_1/52c32e196332ce091eddbe8de801bfb1.jpg"
+        width="200"
+        alt="Must be me"
+        class="my_photo"
+      />
+      
+      <div class="info-text">
+        <h2>Sokolov N.V.</h2>
+        <p><em>Hey, this is my cv</em></p>
+      </div>  
+    </div>
+    
+<!-- контакты -->
+    <div class="card bg-green">
+      <h3>Контакты:</h3>     
+      <p><strong>mail: </strong><a href="nickolay_sokolov@mail.ru" target="_blank">my-mail.ru</a> | TG: @samkopl | Phone number: 7-926-926-60-01</p>
+    </div>  
+  
+<div class="card bg-red">
+  <h2>About Me</h2>
+  <p>I am beginner front end sheet "dev" trying to biold this website using HTML + CSS</p>
+  <p>Probably it will look good. probably not. IDK</p>
+</div>
+
+<div class="hobbies bg-yellow">
+<h3>Hobbies:</h3>
+      <ul>
+        <li>Books</li>
+          <ol>
+            <li>Pelevin</li>
+            <li>Non-ficion</li>
+            <li>Dovlatov</li>
+          </ol>
+        </li>
+        <li>Competetive sports</li>
+        <ol>
+          <li>Armwrestling</li>
+          <li>MotoGP</li>
+          <li>Deadlifting</li>
+        </ol>
+        <li>Music</li>
+        <ol>
+          <li>Live Music</li>
+        </ol>
+      </ul>
+</div>
+
+
+  <div class="work">
     <h2>Work experience</h2>
-    <table>
+    <table class="table">
       <tr>
         <th>Company</th>
         <th>Position</th>
         <th>Department</th>
+        <th>Achievments</th>
       </tr>
       <tr>
         <td>KPMG</td>
         <td>Practincant</td>
         <td>Business valuation</td>
+        <td>
+          <ol>
+          <li>Improved the database to optimize and automate the process and speed up the valuation of fixed assets</li>
+          <li>Calculated the depreciation of properties, plants and equipment based on standardized formulas</li>
+          <li>Analyzed and consolidated handbook information for further use in the valuation of fixed assets</li>  
+          </ol>
+        </td>
       </tr>
       <tr>
         <td>BCG</td>
         <td>Assistant</td>
         <td>General Consulting</td>
+        <td>
+          <ol>
+            <li>Conducted a field study of the market to draw up key points for an enter strategy</li>
+            <li>Calculated human development indices to further search for points of increasing the place in the ranking</li>
+            <li>Analyzed the array of marketing research data and compiled pivot tables to identify key issues in the research area</li>
+          </ol>
+        </td>
       </tr>
       <tr>
         <td>E&Y</td>
         <td>Intern</td>
         <td>Suppplain chain&Operations</td>
+        <td>
+          <ol>
+          <li>Lead a survey of 335 employees from various controlled companies of the stevedore holding</li>
+          <li>Prepared a consolidated table based on collected and preprocessed survey data in Power Query</li>
+          <li>Visualized data in Power BI for further search for unusual functionality</li>
+          <li>Conducted the analysis of deviations of labor costs allocated to the questionnaires from the actual values, using a client’s pass system data</li>
+          <li>Compiled a KPI chart for all employees of the company and conducted analysis of weaknesses and potential points of improvement of the KPI system</li>
+          <li>Conducted analysis of IT solutions of competitors to implement best practices for the client</li>
+        </ol>
+        </td>
       </tr>
       <tr>
         <td>OZON</td>
         <td>Analyst</td>
         <td>Quality Assutrance team</td>
+        <td>
+          <ol>
+          <li>Implemented automatic system of anti-fraud allerts</li>
+          <li>Implemented autotagging system for Off-time using Logistics platform’s API</li>
+          <li>Implemented MVP process for Claim processing</li>
+          <li>Prepared technical specifications for IT dept</li>
+          <li>Analysed large amounts of data using PowerQuery and MySQL</li>
+          <li>Conducted qualitative and quantitative research</li> 
+        </ol>
+        </td>
       </tr>
     </table>
-    <hr color="green" size="4" />
-    <h2>Связаться со мной</h2>
+  </div>
+
+<!-- Окно вопросов       -->
+   
+<div class="contact">
+  <h2>Contact me!</h2>
     <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="tell your name" />
-      <br />
-      <label for="name">Ваше mail:</label>
-      <input type="text" id="name" placeholder="tell your name" />
-      <br />
-      <label for="name">Ваш TG:</label>
-      <input type="text" id="name" placeholder="tell your name" />
-      <br />
-      <label for="text">Введите ваше сообщение</label>
-      <textarea id="text" cols="30" rows="5"></textarea>
-      <br />
-      <input type="submit" value="Отправить!" />
+    
+    <div class="row">
+      <div class="form-group">
+          <label for="name">What's your name</label>
+          <input type="text" id="name" placeholder="Type in yor name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">What's your email</label>
+          <input type="text" id="email" placeholder="Type in yor email">
+        </div>
+    </div>  
+
+    <div class="form-group">
+      <label for="text">Your message</label>
+      <textarea id="text" cols="30" rows="4"></textarea>
+      
+    </div>
+    
+    <input class="btn" type="submit" value="Send!">
+    
     </form>
+    
+</div>
+
+
   </body>
 </html>
